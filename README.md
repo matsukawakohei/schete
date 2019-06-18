@@ -14,7 +14,7 @@
 ### Association
 - belongs_to :user
 
-## noteテーブル
+## notesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
