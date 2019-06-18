@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## schedulesテーブル
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|plan|text|null: false|
+|place|text||
+|memo|text||
+|day|date|null: false|
+|start_time|time|null: false|
+|emd_time|time||
 
-* Ruby version
+### Association
+- belongs_to :user
 
-* System dependencies
+## noteテーブル
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|body|text||
+|image|text||
+|day|date|null: false|
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
