@@ -1,0 +1,10 @@
+<p>newページ</p>
+
+<%= form_for @event do |f| %>
+<%= f.text_field :title, placeholder: "予定", class: "form-title" %>
+<%= f.text_field :place, placeholder: "場所", class: "form-place" %>
+<%= f.text_field :memo, placeholder: "詳細", class: "form-memo" %>
+<%= f.datetime_field :start_date, placeholder: "開始時刻", class: "form-start_date" %>
+<%= f.datetime_field :end_date, placeholder: "終了時刻", class: "form-end_date" %>
+<%= f.submit "作成", class: "submit" %>
+<% end %>
