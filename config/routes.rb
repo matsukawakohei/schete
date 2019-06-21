@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'schedules#index'
+  root 'events#index'
+
+  resources :events
 end

@@ -52,3 +52,4 @@ production:
   database: schete_production
   username: schete
   password: <%= ENV['SCHETE_DATABASE_PASSWORD'] %>
+  
