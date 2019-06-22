@@ -1,1 +1,9 @@
+<div>
+<% if user_signed_in? %>
+  <%= link_to "メニュー" new_event_path, method: :get, class: "link1"%>
+  <%= link_to "ログアウト" destroy_user_session_path, method: :delete, class: "link2"%>
+<% else %>
+  <%= link_to "ログイン" new_user_session_path, method: :get, class: "link1"%>
+  <%= link_to "新規登録" new_user_registration_path, method: :get, class: "link2"%>
+</div>
 <div id="calendar"></div>
